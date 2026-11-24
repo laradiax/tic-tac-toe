@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model name="tic-tac-toe">
+    <baduino>C:\Users\Lara\git\tic-tac-toe\.baduino</baduino>
+    <classes>
+        <class>org.example.AllTests</class>
+        <class>org.example.JogadaInvalidaException</class>
+        <class>org.example.JogoDaVelha$Estado</class>
+        <class>org.example.JogoDaVelha</class>
+        <class>org.example.JogoDaVelhaAllTest</class>
+        <class>org.example.TestSetEstr</class>
+        <class>org.example.TestSetFunc</class>
+        <class>org.example.TipoErro</class>
+    </classes>
+    <classes-path>C:\Users\Lara\git\tic-tac-toe\target\classes</classes-path>
+    <coverage-bin>C:\Users\Lara\git\tic-tac-toe\.baduino\coverage.ser</coverage-bin>
+    <coverage-xml>C:\Users\Lara\git\tic-tac-toe\.baduino\coverage.xml</coverage-xml>
+    <location>C:\Users\Lara\git\tic-tac-toe</location>
+    <path>C:\Users\Lara\git\tic-tac-toe\.baduino\tic-tac-toe.xml</path>
+</model>

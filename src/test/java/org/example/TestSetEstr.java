@@ -76,6 +76,7 @@ public class TestSetEstr {
         jogo.jogar('O', 1, 2);
         jogo.jogar('X', 2, 2);
         
+        assertEquals('X', jogo.getCelula(1, 1));
         assertEquals("XO-\n-X-\n---", jogo.getTabuleiroComoTexto());
     }
 }

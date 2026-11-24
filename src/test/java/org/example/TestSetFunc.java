@@ -1,9 +1,11 @@
 package org.example;
 
 import static org.junit.Assert.*;
+
+import org.example.JogoDaVelha.Estado;
+import org.example.TipoErro;
 import org.junit.Before;
 import org.junit.Test;
-import velha.JogoDaVelha.Estado;
 
 public class TestSetFunc {
 
@@ -54,7 +56,7 @@ public class TestSetFunc {
     @Test
     public void CT01_JogadaValidaEmPartidaNova() {
         jogo.jogar('X', 2, 2);
-        assertEquals("-\n-X-\n-", jogo.getTabuleiroComoTexto().replace("-X-", "-X-")); // Ajuste simplificado para assert de visualização
+        assertEquals("---\n-X-\n---", jogo.getTabuleiroComoTexto().replace("-X-", "-X-")); // Ajuste simplificado para assert de visualização
     }
 
     @Test
@@ -163,7 +165,7 @@ public class TestSetFunc {
 
     @Test
     public void CT19_Empate() {
-        jogarSequencia("X11 X13 O12 O22 X21 O23 X32");
+        jogarSequencia("X11 O12 X13 O22 X21 O23 X32");
         jogo.jogar('O', 3, 1); // Penúltima
         jogo.jogar('X', 3, 3); // Última
         assertTrue(jogo.isEncerrada());
